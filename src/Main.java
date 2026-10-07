@@ -13,10 +13,10 @@ public class Main {
         Account account;
         Scanner scanner = new Scanner(System.in);
 
-        // Loop para executação do programa principal
         boolean codeRunned = true;
         while (codeRunned) {
             int choice = MainMenu.showMenu(scanner);
+            scanner.nextLine();
 
             switch (choice) {
                 case 1 -> {
